@@ -86,6 +86,7 @@ html {
 }
 
 body {
+
     background: var(--backgroundColor);
     color: var(--textColor);
     font-family: var(--bodyFont);
