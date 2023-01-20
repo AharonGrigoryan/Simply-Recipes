@@ -218,6 +218,20 @@ button,
     text-transform: capitalize;
 }
 
+.btn-error {
+    cursor: pointer;
+    appearance: none;
+    color: var(--white);
+    background: var(--primary-500);
+    border: none;
+    border-radius: var(--borderRadius);
+    letter-spacing: var(--letterSpacing);
+    padding: 0.375rem 0.75rem;
+    box-shadow: var(--shadow-1);
+    transition: var(--transition);
+    text-transform: capitalize;
+}
+
 button:hover,
 .btn:hover {
     color: var(--white);
@@ -436,6 +450,8 @@ form>*:last-child {
 }
 
 @media screen and (min-width: 992px) {
+
+
     .navbar {
         height: 6rem;
     }
@@ -604,6 +620,7 @@ form>*:last-child {
 }
 
 @media only screen and (min-width: 768px) {
+
     .hero-text h1 {
         font-size: 4rem;
         margin-bottom: 0;
@@ -687,6 +704,10 @@ form>*:last-child {
 }
 
 @media screen and (min-width: 992px) {
+    .btn-error {
+        display: none;
+    }
+
     .recipes-container {
         grid-template-columns: 200px 1fr;
         gap: 1rem;
@@ -716,6 +737,8 @@ form>*:last-child {
 }
 
 @media screen and (min-width: 1200px) {
+
+
     .recipe h5 {
         font-size: 1.15rem;
     }
@@ -758,6 +781,7 @@ form>*:last-child {
 }
 
 @media screen and (min-width: 576px) {
+
     .tags-page {
         grid-template-columns: 1fr 1fr;
     }
