@@ -24,10 +24,7 @@ export default function Home() {
           </div>
         </header>
         <Wrapper>
-          <h5>
-            WELCOME TO 5ART GALLERY COME AND DISCOVER OUR SELECTION OF
-            CONTEMPORARY ART FROM ESTABLISHED AND EMERGING ARTISTS
-          </h5>
+          <h5>WELCOME TO SIMPLY RECIPES! COME AND DISCOVER MODERN RECIPES!</h5>
 
           <h6>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -36,7 +33,7 @@ export default function Home() {
             ad litora torquent per conubia nostra, per inceptos himenaeos. Nam
             iaculis laoreet enim, egestas commodo tellus volutpat nec.
           </h6>
-          <br />
+
           <h6>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Pellentesque quis nibh vel mi interdum volutpat. Maecenas posuere
