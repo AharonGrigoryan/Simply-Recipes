@@ -1,6 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-
 import RecipesList from "./RecipesList";
 import TagsList from "./TagsList";
 
@@ -16,11 +15,7 @@ const query = graphql`
           tags
         }
         image {
-          gatsbyImageData(
-            layout: CONSTRAINED
-            placeholder: TRACED_SVG
-            backgroundColor: "red"
-          )
+          gatsbyImageData(layout: CONSTRAINED, placeholder: DOMINANT_COLOR)
         }
       }
     }

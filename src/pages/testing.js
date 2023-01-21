@@ -9,5 +9,4 @@ const Testing = () => {
   );
 };
 
-// export const data = graphql``;
 export default Testing;
