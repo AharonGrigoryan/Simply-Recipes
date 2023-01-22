@@ -21,7 +21,7 @@ module.exports = {
     simpleData: ["item 1", "item 2"],
     complexData: [
       { name: "Aharon", age: 28 },
-      { name: "Susanna", age: 39 },
+      { name: "Jack", age: 39 },
     ],
   },
   plugins: [
