@@ -1,6 +1,5 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-// import BackgroundSlider from "../components/SliderBackground";
 import styled from "styled-components";
 import AllRecipes from "../components/AllRecipes";
 import DinamicSliderBG from "../components/DinamicSliderBG";

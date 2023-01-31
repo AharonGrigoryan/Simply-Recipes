@@ -14,6 +14,7 @@ export const query = graphql`
         image {
           gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR)
         }
+        id
       }
     }
   }
