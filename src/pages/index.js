@@ -3,10 +3,12 @@ import Layout from "../components/Layout";
 import styled from "styled-components";
 import AllRecipes from "../components/AllRecipes";
 import DinamicSliderBG from "../components/DinamicSliderBG";
+import Seo from "../components/Seo";
 
 export default function Home() {
   return (
     <Layout>
+      <Seo title="Home" />
       <main className="page">
         <DinamicSliderBG />
         <Wrapper>

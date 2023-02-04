@@ -3,10 +3,12 @@ import React from "react";
 import styled from "styled-components";
 import AllRecipes from "../components/AllRecipes";
 import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 
 const Resipes = () => {
   return (
     <Layout>
+      <Seo title="Recipes" />
       <main className="page">
         <header className="hero">
           <StaticImage

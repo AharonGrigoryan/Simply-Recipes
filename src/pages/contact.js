@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import RecipesList from "../components/RecipesList";
+import Seo from "../components/Seo";
 
 const Contact = ({
   data: {
@@ -10,6 +11,7 @@ const Contact = ({
 }) => {
   return (
     <Layout>
+      <Seo title="Contact" />
       <main className="page">
         <section className="contact-page">
           <article>
@@ -25,22 +27,21 @@ const Contact = ({
             </p>
           </article>
           <article>
-            <form
-              className="form contact-from"
-              action="https://formspree.io/f/xeqwonzy"
-              method="POST"
-            >
-              <div className="form-row">
-                <label htmlFor="name">Your Name</label>
-                <input type="text" name="name" id="name" />
+            <form action="https://formspree.io/f/xeqwonzy" method="POST">
+              <div>
+                <label htmlFor="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <div className="error" id="nameError"></div>
               </div>
-              <div className="form-row">
-                <label htmlFor="email">Your Email</label>
-                <input type="text" name="email" id="email" />
+              <div>
+                <label htmlFor="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <div className="error" id="emailError"></div>
               </div>
-              <div className="form-row">
-                <label htmlFor="message">Massage</label>
-                <textarea name="message" id="massage"></textarea>
+              <div>
+                <label htmlFor="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <div className="error" id="messageError"></div>
               </div>
               <button type="submit" className="btn block">
                 Submit

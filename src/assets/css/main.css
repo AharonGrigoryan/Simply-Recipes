@@ -154,39 +154,115 @@ a {
     object-fit: cover;
 }
 
-.form {
+/**********************************/
+form {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    box-shadow: var(--shadow-1);
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+} */
+
+/* .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+} */
+
+/* 
+form {
+    font-size: 16px;
+} */
+
+@media (max-width: 767px) {
+    form {
+        width: 100%;
+    }
+}
+
+/**********************************/
+/* 
+/* .form {
     width: 100%;
     background: var(--white);
     border-radius: var(--borderRadius);
     box-shadow: var(--shadow-2);
     padding: 2rem 2.5rem;
-}
+} */
 
-label {
+/* label {
     display: block;
     font-size: var(--smallText);
     margin-bottom: 0.5rem;
     text-transform: capitalize;
-}
+} */
 
 
-textarea input {
+/* textarea input {
     width: 100%;
     padding: 0.375rem 0.75rem;
     border-radius: var(--borderRadius);
     background: var(--grey-0);
     border-color: transparent;
     border: 1px solid var(--grey-300);
-}
+} */
 
-.form-row {
-    margin-bottom: 1rem;
-}
-
-textarea {
+/* .form-row {
     width: 100%;
+    margin-bottom: 1rem;
+} */
+
+/* textarea {
+
     height: 7rem;
-}
+} */
 
 ::placeholder {
     color: var(--grey-600);
@@ -727,7 +803,7 @@ form>*:last-child {
 
     .recipes-container {
         grid-template-columns: 200px 1fr;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .recipes-list {

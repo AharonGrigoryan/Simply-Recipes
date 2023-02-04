@@ -2,12 +2,14 @@ import { graphql } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
 import RecipesList from "../components/RecipesList";
+import Seo from "../components/Seo";
 
-const TagTamplate = ({ data }) => {
+const TagTamplate = ({ data, pageContext }) => {
   const recipes = data.allContentfulRecipes.nodes;
 
   return (
     <Layout>
+      <Seo title={pageContext.tag} />
       <main className="page">
         <div className="tag-recipes">
           <RecipesList recipes={recipes} />

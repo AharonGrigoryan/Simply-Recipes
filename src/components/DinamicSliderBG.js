@@ -23,18 +23,39 @@ export const query = graphql`
 const DinamicSliderBG = () => {
   const data = useStaticQuery(query);
   const bgInfo = data.allContentfulBackgroundSlider.nodes;
-  console.log(bgInfo);
 
   const settings = {
-    dots: false,
+    dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4000,
     fade: true,
-    speed: 900,
+    speed: 1000,
+    appendDots: (dots) => (
+      <div
+        style={{
+          backgroundColor: "transparent",
+
+          padding: "10px",
+        }}
+      >
+        <ul style={{ marginBottom: "40px" }}> {dots} </ul>
+      </div>
+    ),
+    customPaging: () => (
+      <div
+        style={{
+          height: "8px",
+          width: "8px",
+          backgroundColor: "#645cff",
+          borderRadius: "50%",
+          display: "flex",
+        }}
+      ></div>
+    ),
   };
 
   return (
