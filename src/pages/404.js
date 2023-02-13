@@ -12,7 +12,7 @@ const Error = () => {
           <h1>404</h1>
           <h3>Page not found</h3>
         </section>
-        <Link to="/" className="btn-error">
+        <Link to="/" className="btn">
           Back Home
         </Link>
       </main>

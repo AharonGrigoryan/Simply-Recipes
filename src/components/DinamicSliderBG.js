@@ -38,11 +38,21 @@ const DinamicSliderBG = () => {
       <div
         style={{
           backgroundColor: "transparent",
-
+          borderRadius: "10px",
+          // display: "flex",
+          // alignItems: "center",
+          // justifyContent: "center",
           padding: "10px",
         }}
       >
-        <ul style={{ marginBottom: "40px" }}> {dots} </ul>
+        <ul
+          style={{
+            marginBottom: "40px",
+          }}
+        >
+          {" "}
+          {dots}{" "}
+        </ul>
       </div>
     ),
     customPaging: () => (
@@ -52,7 +62,6 @@ const DinamicSliderBG = () => {
           width: "8px",
           backgroundColor: "#645cff",
           borderRadius: "50%",
-          display: "flex",
         }}
       ></div>
     ),
@@ -68,7 +77,7 @@ const DinamicSliderBG = () => {
             <GatsbyImage image={pathImage} className="hero-img" alt="food" />
             <div className="hero-container">
               <div className="hero-text">
-                <h1>{title}</h1>
+                <h2>{title}</h2>
                 <h4>{description}</h4>
               </div>
             </div>
