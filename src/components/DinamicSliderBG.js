@@ -77,8 +77,8 @@ const DinamicSliderBG = () => {
             <GatsbyImage image={pathImage} className="hero-img" alt="food" />
             <div className="hero-container">
               <div className="hero-text">
-                <h2>{title}</h2>
-                <h4>{description}</h4>
+                <h1>{title}</h1>
+                <h2>{description}</h2>
               </div>
             </div>
           </header>
