@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import slugify from "slugify";
 
 const RecipesList = ({ recipes = [] }) => {
+  console.log(recipes);
   return (
     <div className="recipes-list">
       {recipes.map((recipe) => {

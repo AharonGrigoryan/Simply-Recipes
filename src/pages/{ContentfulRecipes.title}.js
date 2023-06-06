@@ -7,6 +7,7 @@ import slugify from "slugify";
 import Seo from "../components/Seo";
 
 const RecipesTemplate = ({ data }) => {
+  console.log(data);
   const {
     title,
     cookTime,

@@ -64,11 +64,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-suscribers`,
-      options: {
-        id: process.env.SUBSCRIBE_ID,
-      },
-    },
   ],
 };
